@@ -1,0 +1,22 @@
+C:\SIMULIA1\Abaqus\6.14-1\SMA\site\abaqus_v6.env
+
+compile_fortran=['ifort',
+                 '/c','/DABQ_WIN86_64', '/extend-source', '/fpp',
+                 '/iface:cref', '/recursive', '/Qauto-scalar',
+                 '/QxSSE3', '/QaxAVX', 
+                 '/heap-arrays:1', 
+                 # '/Od', '/Ob0',  # <-- Optimization Debugging
+                 # '/Zi',          # <-- Debugging
+                 '/include:%I', '/free', '/Qmkl:parallel']
+
+
+G:\Dassault Systemes\SimulationServices\V6R2017x\win_b64\SMA\site\win86_64.env
+
+abaqus command
+
+C:\Windows\system32\cmd.exe /k ""C:\Program Files (x86)\Intel\Composer XE 2015\bin\ipsxe-comp-vars.bat" intel64 vs2013"
+
+abaqus cae
+
+C:\WINDOWS\SysWOW64\cmd.exe /E:ON /K ""C:\Program Files (x86)\Intel\Composer XE 2015\bin\ifortvars.bat" intel64 vs2013" && G:\SIMULIA\CAE\2017\win_b64\resources\install\cae\launcher.bat cae || pause
+
